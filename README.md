@@ -14,4 +14,5 @@
 * multer
 * dotenv
 * bcrypt
+* multer
 * Postman
