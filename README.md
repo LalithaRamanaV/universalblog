@@ -11,8 +11,7 @@
 * Express
 * Mongoose
 * dotenv
-* multer
-* dotenv
 * bcrypt
+* nodemon
 * multer
 * Postman
