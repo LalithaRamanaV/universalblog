@@ -5,6 +5,7 @@
 # Technologies used
 * React
 * React router dom
+* axios
 * CSS
 * Nodejs
 * MongoDB
