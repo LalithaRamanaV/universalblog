@@ -22,7 +22,7 @@ export default function Sidebar() {
           alt=""
         />
         <p>
-         Universal blog is a place where we can share posts 
+         Universal blog is a place where we can write and read posts.
         </p>
       </div>
       <div className="sidebarItem">
