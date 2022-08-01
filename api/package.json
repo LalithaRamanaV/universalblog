@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install --legacy-peer-deps && npm run build"
+    "start": "node server.js"
   },
   "author": "lalitha",
   "license": "ISC",
