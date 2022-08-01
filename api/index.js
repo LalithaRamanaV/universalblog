@@ -7,7 +7,8 @@ const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
-const path = require("node:path");
+// const path = require("node:path");
+import path from "path";
 
 dotenv.config();
 app.use(express.json());
@@ -29,7 +30,7 @@ const storage = multer.diskStorage({
     },
   });
 
-  const upload = multer({ storage: storage });
+const upload = multer({ storage: storage });
 app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json("File has been uploaded");
 });
@@ -39,11 +40,13 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-// app.use(express.static(path.join(__dirname, "/client/build")));
+const __dirname = path.resolve();
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
-// });
+app.use(express.static(path.join(__dirname, '/client/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '/client/build/index.html'));
+});
 
 app.listen(process.env.PORT || 5000,()=>{
     console.log("Backend server is running")

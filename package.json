@@ -1,0 +1,21 @@
+{
+  "name": "universalblog",
+  "version": "1.0.0",
+  "description": "A fullstack MERN blog application  # Features * Login functionality with password and username * Logout functionality * CRUD operations * Write a post with image and text * Publish post * Create profile with image * update profile * delete account * Read the blog posts * Sign in for the new users * Mongodb to store the data * CSS for styling  * Postman to test API * Created REST Api * Used bcrypt for password security * Used nodemon for automatically restarting the application",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd api && npm install && cd ../client && npm install && npm run build",
+    "start":"node api/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LalithaRamanaV/universalblog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LalithaRamanaV/universalblog/issues"
+  },
+  "homepage": "https://github.com/LalithaRamanaV/universalblog#readme"
+}
