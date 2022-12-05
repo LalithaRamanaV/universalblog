@@ -16,7 +16,8 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 mongoose.connect(process.env.MONGO_URL,  {
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 })
 .then(console.log("Connected to MongoDb"))
 .catch((err)=>console.log(err)); 
@@ -54,11 +55,12 @@ app.use((err, req, res, next) => {
 
 
 
-// app.listen(process.env.PORT || 5000,()=>{
+// app.listen(process.env.PORT || 8800,()=>{
 //     console.log("server is running")
 // })
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5500;
+
 app.listen(port, () => {
   console.log(`serve at http://localhost:${port}`);
 });
