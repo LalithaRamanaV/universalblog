@@ -1,5 +1,8 @@
 # universalblog
  A fullstack MERN blog application 
+
+ # Demo 
+ ![Demo app](uniblog.gif)
 # Features
 * Login functionality with password and username
 * Logout functionality
