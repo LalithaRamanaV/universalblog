@@ -1,7 +1,7 @@
 
+import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import axiosInstance  from "../../config";
 import "./register.css";
 
 export default function Register() {
@@ -14,7 +14,7 @@ export default function Register() {
     e.preventDefault();
     setError(false);
     try {
-      const res = await axiosInstance.post("/auth/register", {
+      const res = await axios.post("/auth/register", {
         username,
         email,
         password,
@@ -32,32 +32,35 @@ export default function Register() {
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your username..."
+          placeholder="Enter name"
           onChange={(e) => setUsername(e.target.value)}
         />
         <label>Email</label>
         <input
           type="text"
           className="registerInput"
-          placeholder="Enter your email..."
+          placeholder="Enter email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <label>Password</label>
         <input
           type="password"
           className="registerInput"
-          placeholder="Enter your password..."
+          placeholder="Enter password"
           onChange={(e) => setPassword(e.target.value)}
         />
         <button className="registerButton" type="submit">
           Register
         </button>
+        <label>Have account? <Link className="link" to="/login">
+          Login
+        </Link></label>
       </form>
-      <button className="registerLoginButton">
+      {/* <button className="registerLoginButton">
         <Link className="link" to="/login">
           Login
         </Link>
-      </button>
+      </button> */}
       {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
     </div>
   );

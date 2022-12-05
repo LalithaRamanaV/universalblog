@@ -1,5 +1,5 @@
 .login {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 30px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,18 +8,19 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-  background-size: cover;
 }
 
 .loginTitle {
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "Varela Round", sans-serif;
 }
-
 .loginForm {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
+}
+label{
+  font-size: 18px;
 }
 
 .loginForm > label {
@@ -27,19 +28,20 @@
 }
 
 .loginInput {
-  padding: 10px;
+  padding: 15px;
   background-color: white;
   border: none;
+  font-size:20px;
 }
 
 .loginButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: lightcoral;
+  background-color:#ffafcc;
   border: none;
-  color: white;
-  border-radius: 10px;
+  color: #000;
   padding: 10px;
+  font-size:20px;
 }
 
 .loginButton:disabled{
@@ -51,10 +53,13 @@
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: teal;
+  background-color: #ffafcc;
   cursor: pointer;
   border: none;
   padding: 10px;
-  color: white;
-  border-radius: 10px;
+  color: #000;
+
+}
+.link{
+ font-size:20px;
 }

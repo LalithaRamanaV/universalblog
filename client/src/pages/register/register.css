@@ -1,5 +1,5 @@
 .register {
-  height: calc(100vh - 50px);
+  height: calc(100vh - 30px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,13 +7,12 @@
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
-    ),
-    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
+    )
 }
 
 .registerTitle {
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "Varela Round", sans-serif;
 }
 
 .registerForm {
@@ -21,35 +20,41 @@
   display: flex;
   flex-direction: column;
 }
+label{
+  font-size: 18px;
+}
 
 .registerForm > label {
   margin: 10px 0;
 }
 
 .registerInput {
-  padding: 10px;
+  padding: 15px;
   background-color: white;
   border: none;
+  font-size:20px;
 }
 
 .registerButton {
   margin-top: 20px;
   cursor: pointer;
-  background-color: teal;
+  background-color: #ffafcc;
   border: none;
-  color: white;
-  border-radius: 10px;
+  color: #000;
   padding: 10px;
+  font-size: 20px;
 }
 
 .registerLoginButton {
   position: absolute;
   top: 60px;
   right: 20px;
-  background-color: lightcoral;
+  background-color: #ffafcc;
   cursor: pointer;
   border: none;
   padding: 10px;
-  color: white;
-  border-radius: 10px;
+  color: #000;
 }
+.link{
+  font-size:20px;
+ }

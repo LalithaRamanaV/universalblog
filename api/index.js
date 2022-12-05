@@ -42,14 +42,23 @@ app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
 
-
+// const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, '/client/build')));
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/client/build/index.html'))
+);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/build/index.html'));
+app.use((err, req, res, next) => {
+  res.status(500).send({ message: err.message });
 });
 
 
-app.listen(process.env.PORT || 5000,()=>{
-    console.log("Backend server is running")
-})
+
+// app.listen(process.env.PORT || 5000,()=>{
+//     console.log("server is running")
+// })
+
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`serve at http://localhost:${port}`);
+});
