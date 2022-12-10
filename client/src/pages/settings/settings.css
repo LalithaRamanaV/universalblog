@@ -73,9 +73,9 @@
     width: 150px;
     align-self: center;
     border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: teal;
+    /* border-radius: 10px; */
+    color:#000;
+    background-color: #ffafcc;
     padding: 10px;
     margin-top: 20px;
     cursor: pointer;

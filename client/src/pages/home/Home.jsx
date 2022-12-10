@@ -4,6 +4,7 @@ import Posts from "../../components/posts/Posts";
 import "./home.css";
 import { useLocation } from "react-router";
 import axios from "axios";
+import Sidebar from "../../components/sidebar/Sidebar";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -21,7 +22,7 @@ export default function Home() {
       <Header />
       <div className="home">
         <Posts posts={posts} />
-        {/* <Sidebar /> */}
+        <Sidebar />
       </div>
     </>
   );

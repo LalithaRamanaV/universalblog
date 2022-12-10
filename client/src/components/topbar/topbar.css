@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width:480px) {
-  .topIcon{
+  h2{
     display: none;
   }
 

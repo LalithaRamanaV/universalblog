@@ -12,10 +12,16 @@ export default function TopBar() {
   };
   return (
     <div className="top">
-      <div className="topLeft">
+      {/* <div className="topLeft">
         <i className="topIcon fab fa-twitter-square"></i>
         <i className="topIcon fab fa-pinterest-square"></i>
         <i className="topIcon fab fa-instagram-square"></i>
+      </div> */}
+       <div className="topLeft">
+        <h2><Link className="link" to="/">
+             Uniblog
+            </Link>
+        </h2>
       </div>
       <div className="topCenter">
         <ul className="topList">
@@ -29,6 +35,7 @@ export default function TopBar() {
               Write
             </Link>
           </li>
+         
           <li className="topListItem" onClick={handleLogout}>
             {user && "Logout"}
           </li>

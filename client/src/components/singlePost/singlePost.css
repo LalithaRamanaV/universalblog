@@ -48,11 +48,11 @@
 }
 
 .singlePostIcon:first-child {
-  color: teal;
+  color: #000;
 }
 
 .singlePostIcon:last-child {
-  color: tomato;
+  color: #000;
 }
 
 .singlePostInfo {
@@ -89,9 +89,9 @@
 .singlePostButton {
   width: 100px;
   border: none;
-  background-color: teal;
+  background-color: #ffafcc;
   padding: 5px;
-  color: white;
+  color: #000;
   border-radius: 5px;
   cursor: pointer;
   align-self: flex-end;

@@ -53,11 +53,11 @@
   position: absolute;
   top: 20px;
   right: 50px;
-  color: white;
-  background-color: teal;
+  color: #000;
+  background-color: #ffafcc;
   padding: 10px;
   border: none;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
 }
